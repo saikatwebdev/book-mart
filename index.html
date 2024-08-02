@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Mart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-menu">
+            <i class="bx bx-menu toggle-btn"></i>
+            <h2 class="logo">Book Mart</h2>
+        </div>
+
+        <!--here will be a search box-->
+        <ul class="nav-list">
+            <div class="search">
+                <input id="searchbar" type="search" placeholder="search  Your desired Book" />
+                <div class="searchicon">
+                    <button id="searchbtn" type="button">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbtJREFUSEvV1UuITnEYx/HPkJUMKYmd2dq4bS0kIxuXmoRSQkmR5JZZDKVoynWmJoqkRBaKjShZYCe3srOxsnArYmEWM/6P/m+deZvznqP3nYX/6jyn83++z/V3ukzx6Zpi/8oA83AYy7EkB/EaL3AeX+oGNhlgO4Yxu8TJN+zE/TqQZsB+DOWLdzGCJ9lenSLfh43Z3obbVZAioAfvMS2X51zJ5RPp/Un8wiJ8bgUpAiLavbiDLRWRPcRaDOBUXcBHLMhNfVsB6MUjvMSKuoBRzEgRTU+RjVUA5uIrfrQYhr8uiiX6iZmYlXoQz61ON77jE+bXzeAdFmMlnlcAVuXpeow1dQGncTz14B42VQCi/tGH2JmbdQEL8SH34QjOllwcxFHEZi/7lz2Ib3fgemHRLuFZtjdgD9Zl+0Lel5YDMZlUbE7jegVzSqKLybmcs4i+HcODskzKxC4m41AWu6WpN7/xCk9xLYtdCF9jB0K7DmC8GdSOXK9vEryLaXQPdhIQvm5ha8HpGfQXIe1kEH5i8wPSV3AaJdzdsNsFNPxcxa5sTMiiU4CQ+BvpX/EmSc0Eme8UoHTf/n/AH9BmShm5CxJHAAAAAElFTkSuQmCC" />
+                    </button>
+                </div>
+
+            </div>
+            <li class="nav-item">
+                <a href="#home">
+                    <span class="link-name" >Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#books">
+                    <span class="link-name">New Arrival</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#storybooks">
+                    <span class="link-name">Story Books</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#mybooks">
+                    <span class="link-name">My Books</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#account">
+                    <span class="link-name">Account</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Navbar Ends here-->
+
+
+    <!-- First Container Starts here  -->
+    <div class="container-1">
+        <div class="welcome">
+            <p id="welcome">
+            <h2 class="highlighted-2">Welcome to </h2>
+            </p>
+            <p>
+            <h1 class="highlighted-1">Book Mart</h1>
+            </p>
+            <p class="highlighted-2">Your Own Book Library</p>
+        </div>
+        <div class="wrapper">
+            <div class="left-image">
+                <div class="pre-btn">
+                    <input type="button" value="<<" placeholder="Pre" id="pre-btn">
+                </div>
+                <a href="https://www.google.com" id="image-link">
+                    <div class="bookImage" id="book1Image">
+                        <img src="https://i.ytimg.com/vi/x9qCa0wntIY/hqdefault.jpg" alt="25+ best Story Books"
+                            height="300px" width="300px">
+                        <center>
+                            <figcaption class="uppercaption">N E W A R R I V A L
+                                !!!</figcaption>
+                        </center>
+                    </div>
+                </a>
+                <div class="nxt-btn">
+                    <input type="button" value=">>" placeholder="nxt" id="nxt-btn">
+                </div>
+            </div>
+            <div class="right-image">
+                <div class="pre-btn">
+                    <input type="button" value="<<" placeholder="Pre" id="pre-btn1">
+                </div>
+                <a href="https://www.google.com" id="image-link2">
+                    <div class="bookImage" id="book2Image">
+                        <img src="https://cdnp.targetpublications.org/media/catalog/product/cache/f63311a2a00c092df9b3c20ab1a8a20f/1/0/10267_2.jpg"
+                            alt="" height="300px" width="300px">
+                        <center>
+                            <figcaption class="uppercaption1">M O S T L O V E D ❤
+                            </figcaption>
+                        </center>
+                    </div>
+                </a>
+                <div class="nxt-btn">
+                    <input type="button" value=">>" placeholder="nxt" id="nxt-btn1">
+                </div>
+            </div>
+        </div>
+    </div> <!--end of first container-->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #505050;
+  background-image: url(pexels-donghuangmingde-2177482.jpg);
+  filter: blur(40px);
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  opacity: 0;
+  animation: blurIn 0.5s forwards;
+  z-index: 0;
+
+}
+
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection{
+  color: rgb(255, 255, 255);
+  background-color: rgb(192, 93, 93);
+}
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #3d52a0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  font-weight: 900;
+  color: white;
+}
+.logo-menu {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.toggle-btn {
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.nav-item a:active {
+  color: rgb(211, 214, 21);
+}
+
+.nav-item a:hover {
+  border-radius: 10px;
+  background-color: #7091e6;
+}
+
+/* Responsive design */
+
+@media (max-width: 950px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+}
+.search {
+  display: flex;
+}
+
+#searchbar {
+  color: black;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 4px 5px;
+  width: 400px;
+  background-color: #7091e6;
+}
+
+#searchbtn {
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 4px;
+  padding-left: 4px;
+  border-radius: 5px;
+  background-color: #3d52a0;
+  border: none;
+}
+
+/* main body starts here */
+.container-1 {
+  margin-top: 20vh;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-image , .right-image{
+  display: flex;
+}
+
+.pre-btn , .nxt-btn{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#pre-btn1{
+  margin-left: 10px;
+}
+#pre-btn , #nxt-btn , #pre-btn1 , #nxt-btn1{
+  height: 20px;
+  width: 30px;
+  border:none;
+  border-radius: 5px;
+  background-color: aqua;
+  animation: btnfadeIn 3s ease-in;
+}
+@keyframes btnfadeIn {
+  0% {
+    opacity: 0;
+
+  }
+  50% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+ 
+  }
+
+}
+.welcome {
+  margin: auto;
+  opacity: 0;
+  transform: translateY(-100%) scale(0.5);
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.bookImage {
+  cursor: pointer;
+  padding: 8px;
+  margin: 10px 0 10px 0;
+  border: 2px solid;
+  border-radius: 15px;
+
+}
+#book1Image {
+  animation: book1fadeIn 2s forwards;
+}
+
+@keyframes book1fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+#book2Image{
+    animation: book2fadeIn 2s forwards;
+}
+@keyframes book2fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.bookImage:hover {
+  transform: scale(1.1);
+}
+.highlighted-1 {
+  font-size: 55px;
+  font-weight: 900;
+  color: rgb(26, 138, 202);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.highlighted-2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+figcaption{
+  color: #d00bdb;
+  font-weight: 900;
+  transition-duration: 0.3s;
+}
+figcaption:hover{
+  color: rgb(140, 44, 179);
+  transform: scale(1.1);
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
