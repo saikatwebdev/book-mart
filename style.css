@@ -144,8 +144,9 @@ html {
 
 /* main body starts here */
 .container-1 {
-  margin-top: 20vh;
-  height: 50%;
+  padding-top: 20vh;
+  margin-bottom:50px;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -282,5 +283,54 @@ figcaption:hover{
   flex-wrap: wrap;
 }
 
+/* container 2 starts here */
+
+.container-2{
+  background:linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab,#f48e21,#7462ff,#d2001a);
+  background-size: 300% 300%;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  animation: color 8s ease-in-out infinite;
+
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+#btn-2{
+  border:2px solid greenyellow;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  height: 40px;
+  width: 100px;
+  transition: 0.3s ease-in;
+}
+
+
+#btn-2:hover{
+  background-color: greenyellow;
+  color: black;
+}
+
+
+#text-new-arr{
+  padding-top: 25vh;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+}
 
 
