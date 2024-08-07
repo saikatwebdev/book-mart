@@ -325,11 +325,15 @@ figcaption:hover{
 }
 
 
-#text-new-arr{
-  padding-top: 25vh;
+
+.text-new-arr{
   color: rgb(255, 255, 255);
   font-size: 30px;
   font-weight: 600;
 }
+#text-new-arr-1{
+  padding-top: 25vh;
+}
+
 
 
